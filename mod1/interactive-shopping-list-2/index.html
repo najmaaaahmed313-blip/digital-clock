@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Interactive List</title>
+	<link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Interactive Shopping List</h1>
+
+    <div class="list-form">
+      <form id="shopping-form">
+        <input type="text" 
+		           placeholder="Item name"
+		           id="product" 
+		           name="product" required />
+               
+        <input type="number"
+		           placeholder="Price"
+	             id="price"
+               name="price"
+               min="0"
+               step="0.01"
+               required />
+        <button type="submit">Add</button>
+      </form>
+    </div>
+
+    <section class="total-cost">
+      <h3>Total cost: <span id="total-cost">Ksh 0.00</span></h3>
+    </section>
+
+    <section class="container"></section>
+
+    <section class="btn-sections hidden">
+      <button type="button" class="clear-list">Clear list</button>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+h1 {
+	font-weight: 800;
+	font-size: 32px;
+}
+input {
+	padding: 10px 5px;
+}
+button {
+	padding: 11px 20px;
+	outline: none;
+	height: 100%;
+	border: none;
+	background-color: rgb(91, 28, 28);
+	border-radius: 10px;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.list-form {
+	margin: 20px 0;
+}
+
+.total-cost {
+	margin: 20px 0;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 10px;
+	margin: 50px 0;
+}
+
+.item {
+	border: solid 1px rgb(216, 164, 164);
+	padding: 10px;
+	border-radius: 12px;
+}
+.item p {
+	margin-top: 8px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.purchased {
+	text-decoration: line-through;
+	text-decoration-color: rgb(205, 163, 163);
+	text-decoration-thickness: 2px;
+}
+
+.item .check {
+	margin-top: 15px;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	text-align: center;
+	justify-content: center;
+}
+.check label {
+	user-select: none;
+}
+
+.actions,
+.inline-actions {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	margin-top: 12px;
+	flex-wrap: wrap;
+}
+
+.actions .edit-item,
+.inline-actions .save-edit {
+	background-color: #3d6e71;
+	padding: 8px 14px;
+}
+
+.delete-item,
+.cancel-edit {
+	background-color: #a63d3d;
+	padding: 8px 14px;
+}
+
+.edit-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.edit-form input {
+	width: 100%;
+}
+
+.hidden {
+	display: none;
+}
